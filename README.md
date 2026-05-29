@@ -1,65 +1,96 @@
 # claude-vratsa-dialect
 
-A Claude Code skill that switches Claude's responses into the **northwest Bulgarian (Vratsa) dialect** — the speech of "пустиняците" and the comedy character **Гацо Бацо** (played by Краси Радков).
+> *"Нема ли кръв, нема фал, я така играем!"*
+> — Гацо Бацо, пустинашка философия
+
+Един Claude Code плъгин, който фърля Claude в **северозападния български (врачански) диалект** — речта на пустиняците и на оня коварен футболист **Гацо Бацо** (от Краси Радков, мама му стара).
 
 > Жик так, баце!
 
-## What it does
+## Кво праи тоа плъгин
 
-When you invoke `/vratsa-dialect`, Claude starts replying in the Vratsa dialect for the rest of the session:
+Кат удриш `/vratsa-dialect`, Claude кандисва и до края на сесията глъчи на врачански — не кат другите врътоглави ботове, дето всички приказват кат един. Туй е витрината:
 
-- **Pronouns**: "я" instead of "аз", "сакам" instead of "искам"
-- **Future tense**: "че" instead of "ще" (NOT "ке" — that's a different dialect)
-- **Verbs**: drop the "х" in ходя forms → "одиме", plus regional verbs like "зирна", "глъчим", "ландзим"
-- **Word order**: subjects move to the end, pronouns reorder around the verb, hedges like "може би" / "едва ли не" get injected mid-sentence
-- **Vocabulary**: рикия (not ракия), баце, ептем, пустиняк, клапавци, мачка, мундза, and ~50 more words
-- **Persona**: warm, teasing, philosophical, slightly self-deprecating — the Гацо Бацо attitude
+**Преди** (стандартен Claude):
+> The function looks correct, but you should consider adding error handling for the edge case when the input is empty.
 
-Technical accuracy is preserved; the dialect is a wrapper, not an excuse for vagueness.
+**След** (Гацо Бацо режим):
+> Тая функция е ептем уйдисана, баце, ама ако ти фърлят празен вход, че се оплете кат пиле в кълчища. Удри едно "if" отгоре да я опазиш — нема ли кръв, нема фал.
 
-## Install
+Под капакото, плъгино удря тия неща:
 
-### As a personal skill (recommended — works in all your projects)
+- **Местоимения**: "я" вместо "аз", "сакам" вместо "искам" — туй е първото нещо, дето те зацепва.
+- **Бъдеще време**: "че" вместо "ще". И внимавай, баце — **не "ке"**, тва е югозападно, не е наше.
+- **Глаголи**: махаме "х"-то от ходя → "одиме"; плюс местни кат "зирна, глъчим, ландзим, жулнем".
+- **Словоред**: подлого фърчи към края, местоименията се прередят около глаголо, а "може би" / "едва ли не" се вмъкват по средата кат гръм от ясно небе.
+- **Речник**: рикия (а не ракия, мама му стара), баце, ептем, пустиняк, клапавци, мачка, мундза — и още някъде към петдесетина думи в [skills/vratsa-dialect/vocabulary.md](skills/vratsa-dialect/vocabulary.md).
+- **Душа**: топла, заядлива, малко философска, малко самоиронична — оная Гацо Бацо нагласа, дето сирене и рикия решават всичко.
 
-```bash
-git clone https://github.com/<your-username>/claude-vratsa-dialect ~/.claude/skills/vratsa-dialect
+Технически точното си остава точно — диалекто е обвивката, не оправдание да се мотаеш.
+
+## Кат го наместиш
+
+### Кат плъгин (тъй препоръчвам — официалният път)
+
+Удри тая команда вътре в Claude Code:
+
+```text
+/plugin install dnaeon/claude-vratsa-dialect
 ```
 
-### As a project skill (works in one repo)
+Една команда, нема `git clone`, нема пътеки да се търсят. Claude Code сам го фаща, версия има, ъпдейти стават с `/plugin update`. Туй е жик так за всеки нормален пустиняк.
+
+### Ръчно (за тия дето сакат да го гепят сами)
+
+Ако сакаш да го клонираш на ръка — например да си го пипаш или да го фанеш на машина без интернет — пак става:
 
 ```bash
-git clone https://github.com/<your-username>/claude-vratsa-dialect <your-repo>/.claude/skills/vratsa-dialect
+# Лична инсталация — във всичките ти проекти
+git clone https://github.com/dnaeon/claude-vratsa-dialect ~/.claude/plugins/vratsa-dialect
+
+# Или само в едно репо
+git clone https://github.com/dnaeon/claude-vratsa-dialect <your-repo>/.claude/plugins/vratsa-dialect
 ```
 
-Claude Code picks up the skill automatically — no restart needed if `~/.claude/skills/` already exists. If it doesn't, restart Claude Code once after creating it.
+### Мигриране от стара ръчна инсталация
 
-## Usage
+Ако вече си клонирал в `~/.claude/skills/vratsa-dialect/` (стария път, преди плъгин-пакетировката), удри едно:
+
+```bash
+rm -rf ~/.claude/skills/vratsa-dialect
+```
+
+…и после инсталирай по новия начин (`/plugin install dnaeon/claude-vratsa-dialect`). Старата структура нема да работи с новата версия — файловете се преместиха в `skills/vratsa-dialect/` вътре в плъгина.
+
+## Кат го пускаш
 
 ```text
 /vratsa-dialect
 ```
 
-Claude confirms with "Жик так, баце — фанах те!" and stays in dialect for the rest of the session.
+Claude че ти отговори с "Жик так, баце — фанах те!" и оттам нататък глъчи на врачански до края на сесията.
 
-To switch back to standard language:
+Ако сакаш да го изключиш и да се върнеш на стандартен:
 
 ```text
 /vratsa-dialect off
 ```
 
-…or just ask Claude to stop, switch to English, etc.
+…или просто му речи да спре, да мине на английски, кво те душа сака.
 
-## Files
+## Файлове
 
-- `SKILL.md` — main skill file (the rules Claude follows when activated)
-- `vocabulary.md` — full vocabulary list, word-order patterns, Гацо Бацо persona, рикия culture
+- `.claude-plugin/plugin.json` — манифесто на плъгина (версия, автор, лиценз)
+- `skills/vratsa-dialect/SKILL.md` — главният файл със правилата, дето Claude ги фаща, кат го активираш
+- `skills/vratsa-dialect/vocabulary.md` — пълният речник, словоред, Гацо Бацо персоната, рикия културата
+- `LICENSE` — MIT, прай кво сакаш с туй
 
-## Background
+## Откъде иде тоа диалект, баце
 
-The Vratsa dialect is spoken in the Vratsa region of northwestern Bulgaria. Wikipedia describes it as "a transition between Sofia, Botevgrad and Danube Plain dialects" — masculine definite article ends in **-о** ("гърбо"), and uses "мги" instead of "им" for third-person plural dative.
+Врачаните глъчат тъй открай време — в северозападна България, около Враца и Берковица. Уикипедия го описва кат "преходен между софийски, ботевградски и крайдунавски" — мъжкият определителен член завършва на **-о** ("гърбо, мъжо, кодо"), а вместо "им" се използва "мги" за трето лице множествено дателен.
 
-**Гацо Бацо** is a beloved comedy character by Bulgarian actor Краси Радков — a satirical Vratsa footballer who speaks in the dialect and embodies the regional humor: simple pleasures, exaggerated bravado, fatalistic wisdom ("нема ли кръв, нема фал, я така играем").
+Един човек на име Краси Радков фърли на сцената един персонаж — **Гацо Бацо** — сатиричен врачански футболист, дето събра цялата таа реч в едно и я направи национално любима. Не е просто акцент, баце — туй е цял мироглед, дето казва "малко ми требе, ама дай ми го хубаво". Прости радости (сирене, рикия, кощрамба), преувеличена хвалба, фаталистична мъдрост ("нема ли кръв, нема фал"). Тоа плъгин фърля точно туй на Claude — не да го направи смешен, а да му даде топлина, дето я нема в стандартните асистенти.
 
-## License
+## Лиценз
 
-Do whatever you want with it, баце.
+MIT — пише го в [LICENSE](LICENSE). Прай кво сакаш с туй, баце. Само да не забравиш да удриш една рикия за здравето на пустиняците.
