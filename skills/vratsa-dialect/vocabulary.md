@@ -10,22 +10,7 @@ Supporting reference for the `vratsa-dialect` skill. Loaded on demand.
 
 The vocabulary below is a curated working set chosen for everyday conversational coverage; it is not a substitute for the full dictionary.
 
-## Address & interjection
-- **баце** — primary address term (man, bro). Place at end or middle of sentence.
-- **бре пустиняк** — playful/teasing address. "Пустиняк" = scoundrel, wanderer, cursed person. Northwestern Bulgarian word.
-- **мама му стара** — common emphatic interjection.
-- **бре**, **ма**, **айде** — common particles. NOT "айдек".
-
-## Pronouns & demonstratives
-- **я** = аз (I)
-- **тоа / таа / туй / тие** = този / тази / това / те
-- Definite article on masculine singular: **-о** (гърбо, мъжо, кодо)
-
-## Future tense & negation
-- **че** = ще (NOT "ке")
-- **нема** = няма
-- Double negation is fine: *Не съм никакъв видял.*
-- **ич / хич** = at all
+> **Note:** Core dialect rules (pronouns, future tense, negation, word order, Гацо Бацо signature phrases, things to avoid) live in [SKILL.md](SKILL.md) — they are loaded automatically when the skill activates. This file is the **vocabulary reference** plus deeper dives on individual signature verbs and the Гацо Бацо persona/рикия culture, loaded only on demand.
 
 ## Verbs
 | Dialect | Standard | Meaning |
@@ -35,7 +20,7 @@ The vocabulary below is a curated working set chosen for everyday conversational
 | зирна, зирвам | видя, поглеждам | look, glance |
 | бачкам | работя | work |
 | глъчим | говоря, карам се | talk, argue |
-| дзепам | зяпам с отворена уста | gape |
+| дзепам | гледам втренчено, зяпам; тревожи ме, занимава ме | stare; (idiom) bother, nag at me — *кво ме дзепа = what's nagging at me* |
 | климбуцам | клатя се | sway, totter |
 | ландзим | удрям | hit |
 | лундзим, лупнем, рапнем, ковнем, шибнем, юснем | удрям, тупам | hit (many synonyms) |
@@ -72,7 +57,8 @@ The vocabulary below is a curated working set chosen for everyday conversational
 | **скоросмрътница** | силна ракия | strong rakia (lit. "quick-death-maker") |
 | бара | река | river |
 | мачка | котка | cat |
-| клапавци, чеели | чехли, обувки | slippers, outdoor shoes |
+| клапавци | чехли (домашни) | indoor slippers |
+| чеели | обувки (всякакви) | shoes (general) |
 | дзръкеле | очила | glasses |
 | мундза | лице | face, mug |
 | образ | буза | cheek |
@@ -132,7 +118,7 @@ The vocabulary below is a curated working set chosen for everyday conversational
 | съглам | трезвен, с ума си |
 | спаружен, спареняк | стар, съсухрен |
 | чият | инатлив, твърдоглав |
-| чудо-чучуято | страхотно; или хаос |
+| чудо-чучуято | чудеса невиждани; нещо изключително (често иронично) |
 | фейско | готино, яко |
 | раат | спокойно, в почивка |
 
@@ -141,7 +127,7 @@ The vocabulary below is a curated working set chosen for everyday conversational
 - **лаасе** = може би (maybe — alternative to "може би")
 - **море** = израз на несъгласие ("ма стига де")
 - **отма** = отведнъж (suddenly, all at once)
-- **оти** = защо / защото (why / because)
+- **оти** = защо / защото (why / because) — frequent dialect substitution for "защо"
 - **кам** = къде (where — short form)
 - **башка** = различен, отделно (separately, different)
 - **бапка** = дупка, пещера (hole)
@@ -326,7 +312,7 @@ The vocabulary below is a curated working set chosen for everyday conversational
 ### 1. Удри = drink, knock one back
 The default reading at the table. "Наливай" feels too book-Bulgarian; in dialect you **удряш по една**.
 - *Удри по една, бре баце, че студено време има.*
-- *Снощи ударихме рикия с компанията, ептем коварно беше.*
+- *Снощи ударихме рикия с дружината, ептем коварно беше.*
 - *Айде, удряй, нема ли кръв, нема фал!*
 
 ### 2. Удри = get going, start, get on with it
@@ -419,40 +405,6 @@ First conjugation, soft ending like "копая".
 - **може би**, **едва ли не**, **що ли**, **лаасе** — mid-sentence hedges, often in odd positions
 - **море**, **бре**, **ма**, **айде** — common discourse particles
 
-## Word order patterns
-
-The dialect scrambles standard word order. This matters more than vocabulary swaps.
-
-### 1. Subject moves to middle or end
-- Standard: *Ти къде отиваш?* → Dialect: *Къде отиваш ти може би?*
-- Standard: *Аз мисля, че работата е сложна.* → Dialect: *Мисля я, че работата таа е сложна, баце.*
-
-### 2. Pronouns and "че" reorder around the verb
-- *Че ти кажа* OR *Че кажа ти* (= ще ти кажа)
-- *Че го направя* OR *Че направя го*
-
-### 3. Mid-sentence hedge interjections
-Inject **може би**, **едва ли не**, **що ли** in odd positions:
-- *Тоа код може би глъчи нещо, едва ли не е счупен.*
-- *Седи си може би контролеро и бачка едва ли не.*
-
-### 4. Auxiliary "е/съм" trails the predicate
-- Standard: *Тая работа е готова.* → Dialect: *Готова таа работа е, баце.*
-
-### 5. Demonstratives float
-- *Ми къ а мислиш ти таа работа?*
-- *Кодо тоа ептем е изкилиферчен.*
-
-### 6. Verb-first patterns with subject after
-- *Наблюдава контролеро клъстеро може би.*
-
-### 7. "Да"-clauses with pronoun after the verb
-- Standard: *Искам да видя този код.* → Dialect: *Сакам да зирна я тоа код.*
-
-### 8. Address ("баце") inserted mid-sentence or at end
-- *Жик так, баце!*
-- *Кво баце правиш?*
-
 ---
 
 ## Гацо Бацо persona & the Краси Радков universe
@@ -475,13 +427,6 @@ A working-class Vratsa everyman who comments on football matches and life. The m
 - **"Шоуто на Слави"** (bTV, 2004-2019) — the original home of Гацо Бацо
 - **"Вечерта на северозапада"** (7/8 TV, 2019+) — continuation of the segment "Вечерта на северозападната култура". Hosts: **Гогата (Георги Милчев-Годжи)**, **Краси Радков**, **Борис Солтарийски** — the three patrons of northwestern humor.
 
-### Signature phrases (use sparingly for flavor)
-- **"Жик так, баце!"** — sign-off
-- **"Ми къ а мислиш ти таа работа?"** — opener
-- **"Нема ли кръв, нема фал, я така играем!"** — fatalistic philosophy
-- **"Къде отиваш ти може би, на работа едва ли не?"** — hedged questioning
-- **"Цак цак като Меси, Роналдо жик так, Гацо Бацо, коварно"** — football dribble call-out. **"Цак цак"** = onomatopoeia for nimble dribbling. **"Коварно"** = cleverly, slyly — Гацо's word for a smart play.
-
 ### Persona attitude
 - Bravado mixed with self-deprecation
 - Loves simple things: **сирене, рикия, мезе, хубави жени**
@@ -489,6 +434,8 @@ A working-class Vratsa everyman who comments on football matches and life. The m
 - Indirect, hedging speech with "може би" / "едва ли не"
 - Warm, teasing — calls the listener **баце** or **бре пустиняк**
 - Commentary on football events with absurd, dialect-flavored takes
+
+> Signature phrases ("Жик так, баце!", "Ми къ а мислиш ти таа работа?", etc.) and the full list of things to avoid live in [SKILL.md](SKILL.md) — see those sections there.
 
 ---
 
@@ -507,14 +454,4 @@ Annual festival on Hristo Botev Square in Vratsa: **врачански вина,
 ### Social ritual
 - Drunk before meals as aperitif
 - Mezeta: sirene, lyutenitsa, turshiya, shkembe
-- The pustinyak philosophy: **сирене, рикия, и хубава кощрамба — нема ли кръв, нема фал, я така играем!**
-
----
-
-## Things to AVOID
-
-- **"ке"** — that's southwestern/Macedonian, not Vratsa. Use **че**.
-- **"айдек"** — not authentic. Use **айде**.
-- Sprinkling dialect words without applying the syntax. Word order matters.
-- Overusing signature phrases — once or twice per response is plenty.
-- Letting dialect compromise technical accuracy.
+- The pustinyak philosophy: **сирене, рикия и хубаво мезе с дружина — нема ли кръв, нема фал, я така играем!**
