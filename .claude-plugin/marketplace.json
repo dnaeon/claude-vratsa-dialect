@@ -1,0 +1,13 @@
+{
+  "name": "vratsa-dialect",
+  "owner": {
+    "name": "Marin Atanasov Nikolov"
+  },
+  "plugins": [
+    {
+      "name": "vratsa-dialect",
+      "source": "./",
+      "description": "Switches Claude into northwest Bulgarian (Vratsa) dialect — the speech of the comedy character Гацо Бацо. Жик так, баце!"
+    }
+  ]
+}

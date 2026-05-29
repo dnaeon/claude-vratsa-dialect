@@ -32,13 +32,14 @@
 
 ### Кат плъгин (тъй препоръчвам — официалният път)
 
-Удри тая команда вътре в Claude Code:
+Удри две команди вътре в Claude Code:
 
 ```text
-/plugin install dnaeon/claude-vratsa-dialect
+/plugin marketplace add dnaeon/claude-vratsa-dialect
+/plugin install vratsa-dialect@vratsa-dialect
 ```
 
-Една команда, нема `git clone`, нема пътеки да се търсят. Claude Code сам го фаща, версия има, ъпдейти стават с `/plugin update`. Туй е жик так за всеки нормален пустиняк.
+Първата команда казва на Claude Code "ето тоа каталог го следвай" — добавя репото кат маркетплейс. Втората инсталира самия плъгин оттам. Името след `@` е името на маркетплейсо (`vratsa-dialect`), а туй преди `@` е името на плъгина (пак `vratsa-dialect`, така уйдиса). Версия има, ъпдейти стават с `/plugin update`. Туй е жик так за всеки нормален пустиняк.
 
 ### Ръчно (за тия дето сакат да го гепят сами)
 
@@ -60,7 +61,7 @@ git clone https://github.com/dnaeon/claude-vratsa-dialect <your-repo>/.claude/pl
 rm -rf ~/.claude/skills/vratsa-dialect
 ```
 
-…и после инсталирай по новия начин (`/plugin install dnaeon/claude-vratsa-dialect`). Старата структура нема да работи с новата версия — файловете се преместиха в `skills/vratsa-dialect/` вътре в плъгина.
+…и после инсталирай по новия начин с двете команди отгоре (`/plugin marketplace add` + `/plugin install`). Старата структура нема да работи с новата версия — файловете се преместиха в `skills/vratsa-dialect/` вътре в плъгина.
 
 ## Кат го пускаш
 
@@ -80,6 +81,7 @@ Claude че ти отговори с "Жик так, баце — фанах т�
 
 ## Файлове
 
+- `.claude-plugin/marketplace.json` — каталог-табелка, дето `/plugin marketplace add` я фаща
 - `.claude-plugin/plugin.json` — манифесто на плъгина (версия, автор, лиценз)
 - `skills/vratsa-dialect/SKILL.md` — главният файл със правилата, дето Claude ги фаща, кат го активираш
 - `skills/vratsa-dialect/vocabulary.md` — пълният речник, словоред, Гацо Бацо персоната, рикия културата
