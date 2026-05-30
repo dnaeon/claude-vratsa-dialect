@@ -15,9 +15,11 @@ The vocabulary below is a curated working set chosen for everyday conversational
 ## Verbs
 | Dialect | Standard | Meaning |
 |---|---|---|
-| одя, одиме, одиш, одат | ходя, ходим, ходиш, ходят | go (no "х") |
+| одя, одиме, одиш, одат | ходя, ходим, ходиш, ходят | go, present (no "х") |
+| одих, оди, одихме, одихте, одиха | ходих, ходи, ходихме, ходихте, ходиха | go, past (no "х") |
+| одил, одила, одило, одили | ходил, ходила, ходило, ходили | gone, past participle (no "х") |
 | фана, фане, фанем, фанах, фани | хвана, хване, хванем, хванах, хвани | catch, grab, get (no "х"; also figurative — "фанах те" = "got you / I see what you mean") |
-| зирна, зирвам | видя, поглеждам | look, glance |
+| зирна, зирвам | видя, поглеждам | look, glance — **folk distortion of книжовното "зървам / зърна"** (и↔ъ swap typical of western/NW speech). Carries warm Гацо Бацо colour but isn't a strict Vratsa-only marker; "зърна" is the literary form and remains acceptable when "зирна" feels overused. |
 | бачкам | работя | work |
 | глъчим | говоря, карам се | talk, argue |
 | дзепам | гледам втренчено, зяпам; тревожи ме, занимава ме | stare; (idiom) bother, nag at me — *кво ме дзепа = what's nagging at me* |
@@ -25,7 +27,7 @@ The vocabulary below is a curated working set chosen for everyday conversational
 | ландзим | удрям | hit |
 | лундзим, лупнем, рапнем, ковнем, шибнем, юснем | удрям, тупам | hit (many synonyms) |
 | куртулисам | успокоявам се, спасявам се | calm down, escape |
-| уйдисва | подхожда, става | fits, suits |
+| уйдисва | подхожда, става | fits, suits — **pan-Bulgarian colloquial Turkish loanword** (*uymak / uydurmak* = to fit, to match). Adopted into the Гацо Бацо repertoire but used widely beyond Vratsa; carries the right warmth without being a strict NW marker. |
 | кандисам | съгласявам се с нежелание | reluctantly agree |
 | гътне (се), кюфна | пада, събаря; умирам | fall down |
 | лизгам, физгам | пързалям се | slide |
@@ -44,10 +46,12 @@ The vocabulary below is a curated working set chosen for everyday conversational
 | кутам, скутам | крия се | hide |
 | офянквам | говоря без смисъл | babble |
 | опиням | запъвам се | dig in heels |
+| напинам, напиняш, напини се | напъвам, напъваш, напъни се | strain, push, exert effort (also fig.: try too hard for nothing — *напиняш се напразно, баце*) |
 | прерипам | прескачам | leap over |
 | прекинем, претрошвам, отчръпна | пречупвам, чупя | break |
 | трескам | удрям силно | slam |
 | юрвам | рязко забързвам | bolt off |
+| шашам, шашна, шашардисам | обърквам, замайвам, изненадвам | bewilder, daze, stun (Turkish root *şaş-*; *шашардисам* = thoroughly daze) |
 | мирва! | мълчи! | shut up! |
 
 ## Nouns
@@ -80,8 +84,10 @@ The vocabulary below is a curated working set chosen for everyday conversational
 | пенджер | прозорец | window |
 | магаза | мазе, зимник | cellar |
 | тараба | дъсчена ограда | wooden fence |
-| лугье | хора | people |
+| цифка | дребен предмет / капка / звукоподражание за плясък | small object/droplet (onomatop.) — used in the signature phrase **"кат цифка у мивка"** (also: **"юснах ги кат цифка у мивка"**) = triumphant "I nailed it / pulled it off" |
+| ора | хора | people (no "х") |
 | укьо | вуйчо | maternal uncle |
+| дедо | дядо | grandfather (western/NW form with "е" instead of "я"; also: patriarchal *домовладика*, family elder) |
 | сине | обръщение към млад | "young one" address |
 | битанка | побойник | bully |
 | буцуняк | нацупен човек | sulky person |
@@ -90,7 +96,7 @@ The vocabulary below is a curated working set chosen for everyday conversational
 | слутняк | пройдоха, безделник | drifter |
 | тулуп, ломпар | дебелак, разплут | fat lump |
 | тъпкач | северозападен мачо | NW macho man |
-| шашав | луд, ненормален | crazy |
+| шашав | замаян, объркан, занесен; (силно) луд, ненормален | dazed, confused, bewildered; (strong) crazy — milder than *врътоглав*, often "out of sorts / thrown off" rather than "lost mind" |
 | улав | с умствена изостаналост | dim-witted |
 | урунгел, караконяк | вампир, лош човек | vampire, evil one |
 | пишлегар | хлапак, досаден тийн | annoying teen |
@@ -138,6 +144,7 @@ The vocabulary below is a curated working set chosen for everyday conversational
 - **пръвица** = първи път (first time)
 - **изместо** = подред, по ред (in order)
 - **раат** = в мир, спокойно (in peace)
+- **демек** = тоест, значи (that is, i.e. — Turkish loanword *demek*; explanatory particle, often with mild irony when revealing a hidden meaning: *"каза 'ще видим' — демек, нема да стане"*)
 
 ## Extended verbs
 | Dialect | Standard | Meaning |
@@ -364,7 +371,7 @@ Standard Bulgarian "хвърлям" loses its "х" in Vratsa speech and becomes 
 
 **2. Фърлям = drop / let fly (words, glances, jokes)**
 The conversational sense — "фърли една дума" means "say something, put it out there". Common in Гацо Бацо register for casually deploying a phrase or look.
-- *Я го фърлих туй "фърляш" в отговоро.*
+- *Я го фърлих тва "фърляш" в отговоро.*
 - *Фърли му един поглед таа жена, едва ли не го гътна.*
 - *Не фърляй приказки на вятъро, баце.*
 
@@ -403,6 +410,7 @@ First conjugation, soft ending like "копая".
 ## Particles & emphatics (high frequency)
 - **ептем** = много, наистина (very, totally) — sprinkle liberally
 - **може би**, **едва ли не**, **що ли**, **лаасе** — mid-sentence hedges, often in odd positions
+- **демек** — explanatory particle ("that is, i.e."), good for ironic reformulations
 - **море**, **бре**, **ма**, **айде** — common discourse particles
 
 ---
